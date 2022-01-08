@@ -11,6 +11,6 @@ Auto Rename Tag
         
 Beautify 
 Prettier - Code formatter
-
+Material Icon Theme
 
 
