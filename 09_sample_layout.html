@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+
+      .row {
+        overflow: auto;
+      }
+
+      #header {
+        background-color: #f1f1f1;
+        height: 120px;
+      }
+      .aside-left {
+        width: 20%;
+        /* height: 400px; */
+        background-color: lightblue;
+      }
+      .main {
+        width: 65%;
+        /* height: 400px; */
+        background-color: lightgreen;
+        padding: 16px;
+      }
+      .aside-right {
+        width: 15%;
+        /* height: 400px; */
+        background-color: lightpink;
+      }
+
+      .aside-left,
+      .aside-right,
+      .main {
+        float: left;
+      }
+
+      #footer {
+        height: 250px;
+        background-color: #555;
+        /* clear: both; */
+
+        margin-top: 10px;
+      }
+
+      .aside-link {
+        display: block;
+        text-decoration: none;
+        color: darkblue;
+        padding: 8px 16px;
+        border-bottom: 1px solid darkblue;
+      }
+
+      .main-image {
+        max-width: 100%;
+      }
+      .aside-image {
+        display: block;
+        width: 100%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">Header</div>
+    <div class="row">
+      <div class="aside-left">
+        <a href="#" class="aside-link">Link 1</a>
+        <a href="#" class="aside-link">Link 2</a>
+        <a href="#" class="aside-link">Link 3</a>
+        <a href="#" class="aside-link">Link 4</a>
+        <a href="#" class="aside-link">Link 5</a>
+        <a href="#" class="aside-link">Link 6</a>
+        <a href="#" class="aside-link">Link 7</a>
+        <a href="#" class="aside-link">Link 8</a>
+        <a href="#" class="aside-link">Link 9</a>
+        <a href="#" class="aside-link">Link 10</a>
+        <a href="#" class="aside-link">Link 11</a>
+        <a href="#" class="aside-link">Link 12</a>
+        <a href="#" class="aside-link">Link 13</a>
+      </div>
+  
+      <div class="main">
+        <h2>Title</h2>
+        <img src="images/cellphone.jpg" alt="" class="main-image"/>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At vitae ducimus porro explicabo
+          saepe aut eum a provident, alias tempore esse temporibus, aspernatur ab est sit dolor et,
+          cumque sunt?
+        </p>
+      </div>
+      <div class="aside-right">
+        <img src="images/front-page-project-1.jpg" alt="sds" class="aside-image">
+        <img src="images/front-page-project-2.jpg" alt="sds" class="aside-image">
+        <img src="images/front-page-project-3.jpg" alt="sds" class="aside-image">
+        <img src="images/front-page-project-4.jpg" alt="sds" class="aside-image">
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
