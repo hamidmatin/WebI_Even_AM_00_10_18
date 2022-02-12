@@ -1,0 +1,112 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**********************/
+#about {
+  background: url('/images/pattern.webp');
+  padding: 80px 0;
+  text-align: center;
+}
+.section-title {
+  text-align: center;
+  color: #555;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.section-description {
+  text-align: center;
+  color: #8c9597;
+  margin: 0 150px;
+  line-height: 26px;
+}
+
+.progress-wrapper {
+  width: 33.33%;
+  padding: 12px;
+  
+}
+.progress-wrapper .progress {
+  height: 200px;
+  position: relative;
+}
+.progress-wrapper .progress .axix-x {
+  height: 1px;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+}
+.progress-wrapper .progress .progress-bar{
+  height: 4px;
+  background-color: #888;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  
+  width: 30%;
+}
+.progress-wrapper .progress .progress-bar::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.progress-wrapper .progress .progress-value {
+  position: absolute;
+  background-color: #888;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  top: 50px;
+  left: 30%;
+
+}
+.progress-wrapper .progress .progress-value::after{
+  content: '';
+  border-top: 6px solid #888;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-wrapper .progress .proggress-lable {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  color: #888;
+}
+
+/**********/
